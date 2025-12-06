@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-color: #1a1a1a;
+            /* remember 1a1a1a is the color code for black  */
+            margin:0;
+            padding:0;
+            /* now every webpage has a padding and margin of its own so here i just made bydefault as 0 */
+            height:100vh;
+            /* vh means viewport height that means if it is a laptop screen webpage ki lengty us hissab se ho jaegi ---phone hai to uske hissab se ho jaegi */
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+        }
+        h2{
+            color:black;
+            text-align:center;
+            margin-bottom: 50px;
+        }
+        .card{
+            background-color: #c7b1b1;
+            border-radius: 6px;
+            padding:30px;
+            /* padding controls evrything inside the card like space and all thyat means space inside the card */
+            width:300px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            gap:30px;
+            /* not used that much man */
+
+        }
+        input{
+            margin-bottom: 15px;
+            padding:10px;
+            border-radius: 5px;
+            background-color:ghostwhite;
+            border:1px solid black;
+        }
+
+        button{
+            background-color: rgb(34, 66, 66);
+            color:bisque;
+            padding:10px;
+            border-radius:8px;;
+        }
+        button:hover{
+            background-color: rgb(52, 43, 31);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- emmet of this : div.card -->
+        <h2>Form</h2>
+        <form>
+            <input type="email" placeholder="Enter your Email">
+            <input type="password" placeholder="Enter your Password">
+            <button type="submit">
+                Login
+            </button>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
